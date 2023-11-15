@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>A propos</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./a-propos.css" />
+    <link rel="stylesheet" href="./social-icons.css" />
+    <script src="content.js"></script>
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-
+    KJ3o2DKtIkvYIK3UENzmM7KCkRr/RpY4SNORxHI2Q1e9RAd9Ru/Sr+hTBVbPyU2r" crossorigin="anonymous">
+
+  </head>
+  <body>
+      <div class="header-and-frame">
+        <div class="headingframe1">
+          <div id="header"></div>
+        </div>
+        <img class="banniere-a-propos" alt="" src="./public/imageabout@2x.png" />
+      </div>
+
+      <div class="contenaire-a-propos">
+        <h1 class="titre-a-propos">Qui sommes-nous ?</h1>
+        <div class="ligne-separation"></div>
+        <div class="contenu-a-propos">
+
+          <p>Bienvenue chez KouwariAI, l&#39;agence de marketing digital qui transforme votre présence en ligne grâce à 
+            l&#39;intelligence artificielle. En tant que nouvelle référence sur le marché, notre objectif est clair : maximiser 
+            vos ressources numériques pour une croissance exceptionnelle.</p>
+
+          <p>Pourquoi Nous Choisir :
+            Opter pour KouwariAI signifie choisir une collaboration fondée sur l&#39;innovation, la transparence et des 
+            résultats exceptionnels. Voici pourquoi vous pouvez avoir confiance en nous :</p>
+
+          <p>Expertise en IA Avancée :
+            Nos experts se démarquent dans l&#39;utilisation avancée de l&#39;intelligence 
+            artificielle. Notre équipe maîtrise les dernières technologies pour transformer la création de contenu en une 
+            expérience rapide, économique et hautement performante.</p>
+
+          <p>Satisfaction Client Prioritaire :
+            La satisfaction client est notre boussole. Chez KouwariAI, chaque projet est traité avec un suivi personnalisé 
+            et une attention dédiée à vos besoins spécifiques. Nous nous engageons à dépasser vos attentes à chaque étape 
+            de notre collaboration.</p>
+
+          <p>Respect des Engagements :
+            KouwariAI se distingue par son engagement sans faille à respecter tous les engagements pris. Nous ne 
+            considérons pas seulement vos projets comme des prestations, mais comme des collaborations dynamiques. Chaque 
+            projet est pris en charge de A à Z, garantissant une exécution transparente et une livraison de résultats 
+            exceptionnels.</p>
+
+          <p>Rapport Qualité-Prix Imbattable :
+            Offrons un rapport qualité-prix imbattable grâce à des techniques de production utilisant l&#39;IA. 
+            Nous comprenons que chaque client a des besoins uniques et des budgets variés. Notre flexibilité nous 
+            permet de proposer des stratégies sur mesure, garantissant une valeur exceptionnelle pour chaque euro 
+            investi dans votre marketing digital.</p>
+
+            <p><b>Nos Valeurs:</b></p>
+          <ul>
+            <li>Innovation constante avec l&#39;utilisation experte de l&#39;IA.</li><br>
+            <li>Engagement envers la satisfaction client comme priorité absolue.</li><br>
+            <li>Transparence totale dans chaque collaboration, de la conception à la réalisation.</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <div class="social-buttons">
+        <div class="main">
+          <div class="button"><div class="s-icon"><a href="https://www.facebook.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-facebook"></i></a></div><span>Facebook</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.linkedin.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-linkedin"></i></a></div><span>LinkedIn</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.twitter.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-twitter"></i></a></div><span>Twitter</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.instagram.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-instagram"></i></a></div><span>Instagram</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.github.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-github"></i></a></div><span>Github</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.watsapp.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-whatsapp"></i></a></div><span>WhatsApp</span></div>
+          <div class="button"><div class="s-icon"><a href="https://www.youtube.com/" target="_blank " style="text-decoration: 
+            none; color:inherit;"><i class="fa-brands fa-youtube"></i></a></div><span>YouTube</span></div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256 
+        oP6HI/tfVu7MnAwinFhngiR+Xq3+z0tJ8ma8e3J4NTo=" crossorigin="anonymous"></script>
+        <script>
+            // Ajouter la fonction pour faire flotter les icônes en bas de la page
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(globalThis).scrollTop() > 180) {
+                        $('.social-buttons').fadeIn();
+                    } else {
+                        $('.social-buttons').fadeOut();
+                    }
+                });
+            });
+        </script>
+      </div>
+
+      <div id="footer"></div>
+  </body>
+</html>
