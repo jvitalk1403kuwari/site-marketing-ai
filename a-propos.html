@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>A propos</title>
     <meta name="description" content="">
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./a-propos.css" />
-    <link rel="stylesheet" href="./social-icons.css" />
-    <script src="content.js"></script>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"/>
-    
+    <link rel="stylesheet" href="global.css"/>
+    <link rel="stylesheet" href="a-propos.css"/>
+    <link rel="stylesheet" href="dist/output.css"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-
-    KJ3o2DKtIkvYIK3UENzmM7KCkRr/RpY4SNORxHI2Q1e9RAd9Ru/Sr+hTBVbPyU2r" crossorigin="anonymous">
+    KJ3o2DKtIkvYIK3UENzmM7KCkRr/RpY4SNORxHI2Q1e9RAd9Ru/Sr+hTBVbPyU2r" crossorigin="anonymous"/>
 
   </head>
-  <body>
+  <body class="cta-striper-bg">
       <div class="header-and-frame">
         <div class="headingframe1">
-          <div id="header"></div>
+
+          <nav class="fixed top-0 z-20 bg-gray-900 bg-opacity-90 p-4 w-full grid grid-cols-none shadow-md md:max-w-7xl md:grid-cols-menu-ext md:shadow-none md:relative md:mx-auto md:bg-transparent">
+
+            <div class="flex justify-between items-center md:justify-center">
+            <a class="logo" href="index.html" target="_self">
+              <div class="logo-image"></div>
+              <div class="marque"></div>
+            </a>
+        
+          <button class="icone-toggle bg-white rounded-md p-2 ring-1 ring-black ring-opacity-20 md:hidden">
+            <img src="public/menu.svg" alt="icône hamburger" class="h-6 w-6">
+          </button>
+          </div>
+        
+        <ul class="toggle-menu-ext hidden px-1 pt-6 bg-gray-900 bg-opacity-90 flex-col md:flex md:bg-transparent md:pt-0 md:flex-row md:space-x-5
+          md:w-auto md:items-center  mt-6 md:mt-0 md:justify-end">
+        
+          <li class="py-2 text-center">
+            <a 
+            href="index.html#services" target="_self"
+            class="font-medium text-lg text-zinc-500 hover:text-gray-100"
+            >SERVICES</a>
+          </li>
+          
+          <li class="py-2 text-center">
+            <a 
+            href="article.html" target="_self"
+            class="font-medium text-lg text-zinc-500 hover:text-gray-100"
+            >BLOG</a>
+          </li>
+          
+          <li class="py-2 text-center">
+            <a 
+            href="a-propos.html" target="_self"
+            class="font-medium text-lg text-zinc-500 hover:text-gray-100"
+            >A PROPOS</a>
+          </li>
+        </u>
+    
+        </nav>
+          <!-- <div id="header"></div> -->
         </div>
+
         <img class="banniere-a-propos" alt="" src="./public/imageabout@2x.png" />
       </div>
 
-      <div class="contenaire-a-propos">
-        <h1 class="titre-a-propos">Qui sommes-nous ?</h1>
+      <div id="a-propos" class="contenaire-a-propos">
+        <h1 class="font-extrabold  text-gray-800 text-3xl sm:text-3xl md:text-5xl mt-5">Qui sommes-nous ?</h1>
         <div class="ligne-separation"></div>
         <div class="contenu-a-propos">
 
@@ -68,40 +108,27 @@
         </div>
       </div>
 
-      <div class="social-buttons">
-        <div class="main">
-          <div class="button"><div class="s-icon"><a href="https://www.facebook.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-facebook"></i></a></div><span>Facebook</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.linkedin.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-linkedin"></i></a></div><span>LinkedIn</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.twitter.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-twitter"></i></a></div><span>Twitter</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.instagram.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-instagram"></i></a></div><span>Instagram</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.github.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-github"></i></a></div><span>Github</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.watsapp.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-whatsapp"></i></a></div><span>WhatsApp</span></div>
-          <div class="button"><div class="s-icon"><a href="https://www.youtube.com/" target="_blank " style="text-decoration: 
-            none; color:inherit;"><i class="fa-brands fa-youtube"></i></a></div><span>YouTube</span></div>
-        </div>
-        
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256 
-        oP6HI/tfVu7MnAwinFhngiR+Xq3+z0tJ8ma8e3J4NTo=" crossorigin="anonymous"></script>
-        <script>
-            // Ajouter la fonction pour faire flotter les icônes en bas de la page
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(globalThis).scrollTop() > 180) {
-                        $('.social-buttons').fadeIn();
-                    } else {
-                        $('.social-buttons').fadeOut();
-                    }
-                });
-            });
-        </script>
-      </div>
 
-      <div id="footer"></div>
+      <!-- Footer -->
+  
+      <footer class="bg-gray-800 py-5 w-full">
+  
+        <h3 class="text-2xl pb-5 text-center  md:text-3xl text-white">Retrouvez-nous ici</h3>
+        
+        <div class="mb-5 flex space-x-6 justify-center text-white">
+          <a href="#"><img src="public/fb.svg" alt="icône fb" class="w-6"></a>
+          <a href="#"><img src="public/twitter.svg" alt="icône twitter" class="w-6"></a>    
+          <a href="#"><img src="public/githubpetitlogo.svg" alt="icône github" class="w-6"></a>
+        </div>
+
+        <hr class="w-32 mx-auto mb-5">
+        <p class="text-center mt-8 text-base text-gray-400 md:mt-0">&copy; <span id="date-container">2023</span> KouwariAI , TOUS DROITS RÉSERVÉS</p>
+
+      </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256 
+  oP6HI/tfVu7MnAwinFhngiR+Xq3+z0tJ8ma8e3J4NTo=" crossorigin="anonymous"></script>
+  <script src="scripts/app.js"></script>
   </body>
 </html>

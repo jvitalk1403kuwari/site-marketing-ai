@@ -1,5 +1,3 @@
-/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
-
 .titre {
   position: relative;
   font-weight: 800;
@@ -11,9 +9,10 @@
   font-weight: 300;
 }
 .texte-accroche-gras {
-  font-weight: 600;
-  color: var(--color-white);
+  font-weight: 500;
+  color: var(--color-mediumslateblue);
 }
+
 .contactez-nous,
 .sous-titre {
   position: relative;
@@ -22,7 +21,7 @@
   font-size: 24px;
   line-height: 44px;
   display: inline-block;
-  max-width: 627px;
+  max-width: 783px;
   color: var(--color-slategray-100);
 }
 .contactez-nous {
@@ -34,7 +33,11 @@
   color: var(--color-white);
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: center;}
+
+  a {
+    text-decoration: none; 
+    color: inherit;
 }
 .boutoncontact,
 .button-frame,
@@ -65,7 +68,7 @@
 }
 .headingcontent {
   align-self: stretch;
-  padding: 0 75px;
+  padding: 75px 75px;
   gap: 49px;
   text-align: center;
   font-size: 80px;
@@ -105,7 +108,7 @@
 }
 .headingframe {
   flex-direction: column;
-  padding: var(--padding-5xl) 0;
+  /* padding: var(--padding-5xl) 0; */
   align-items: center;
   justify-content: flex-start;
   gap: 87px;
@@ -125,6 +128,7 @@
 .titre-service {
   align-self: stretch;
   position: relative;
+  text-align: justify;
 }
 .titre-service {
   line-height: 42px;
@@ -134,6 +138,7 @@
 .texte-service {
   font-size: var(--font-size-lg);
   color: var(--color-slategray-100);
+  width: 100%;
 }
 .titre-et-texte-service {
   flex: 1;
@@ -146,8 +151,8 @@
 .image-service {
   position: relative;
   border-radius: var(--br-8xs);
-  width: 260px;
-  height: 200px;
+  width: 360px;
+  height: 300px;
   object-fit: cover;
 }
 .service,
@@ -209,6 +214,7 @@
   width: 95%;
 }
 
+
 @media screen and (max-width: 960px) {
   .titre {
     font-size: 60px;
@@ -236,7 +242,6 @@
   }
 }
 
-
 @media screen and (max-width: 580px) {
   .titre {
     font-size: 45px;
@@ -254,5 +259,9 @@
   .titre-et-texte-service {
     flex: unset;
     align-self: stretch;
+  }
+
+  .texte-accroche .texte-accroche-gras {
+    font-size: 18px;
   }
 }

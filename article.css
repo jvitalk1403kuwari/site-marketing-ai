@@ -1,6 +1,5 @@
-/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
 
-div.contenu p, li {
+div.contenu p, .ul li {
   font-size: var(--font-size-lg);
   color: var(--color-slategray-100);
 }
@@ -50,7 +49,7 @@ ol {
   margin: 0;
 }
 
-li {
+.ul li {
   margin-bottom: 35px;
 }
 
@@ -69,7 +68,7 @@ div.contenu p {
   display: flex;
   background-color: var(--color-black);
   flex-direction: column;
-  padding: var(--padding-5xl) 0;
+  /* padding: var(--padding-5xl) 0; */
   align-items: center;
   justify-content: flex-start;
 }
@@ -92,6 +91,7 @@ div.contenu p {
   justify-content: flex-start;
   font-size: var(--font-size-23xl);
   color: var(--color-black);
+
 }
 .banniere-article {
   max-width: 100%;
@@ -137,6 +137,10 @@ div.contenu p {
   max-width: 900px;
   font-size: var(--font-size-14xl);
   color: var(--color-black);
+}
+
+p {
+  text-align: justify;
 }
 
 @media screen and (max-width: 960px) {

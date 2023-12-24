@@ -1,9 +1,7 @@
-/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
-
 body {
   margin: 0;
   line-height: normal;
-  display: flex;
+  
   flex-direction: column;
   position: relative;
   background-color: var(--color-white);
@@ -13,7 +11,8 @@ body {
   justify-content: flex-start;
   gap: var(--gap-mini);
   text-align: left;
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-3xl); 
+  display: flex;
   color: var(--color-white);
   font-family: var(--font-manrope);
 }
@@ -60,6 +59,7 @@ body {
   --gap-16xl: 35px;
 
   /* Paddings */
+  --padding-lg: 0px;
   --padding-lg: 18px;
   --padding-21xl: 40px;
   --padding-27xl: 46px;
@@ -102,7 +102,7 @@ h2, h3 {
   padding: 0 var(--padding-mini);
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-mini);
+  gap: var(--gap-0);
   text-decoration: none;
   color: white;
 }
@@ -112,6 +112,7 @@ h2, h3 {
   background-size: cover;
   width: var(--taille-logo);
   height: var(--taille-logo);
+  margin-left: 30px;
 }
 
 div.menu a {
@@ -151,6 +152,7 @@ div.menu a:hover {
   justify-content: center;
 }
 
+
 .couleur-accent {
   color: var(--color-mediumslateblue);
 }
@@ -178,14 +180,14 @@ div.menu a:hover {
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  padding: var(--padding-27xl) 0;
+  padding: var(--padding-10xs) 0;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-sm);
 }
 
 .ai-marketing-droits {
-  position: relative;
+  position:relative;
   font-size: var(--font-size-sm);
   line-height: 245.1%;
   font-weight: 500;
@@ -198,7 +200,7 @@ div.menu a:hover {
 }
 
 #footer {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   align-self: stretch;
   background-color: var(--color-black);
@@ -224,25 +226,35 @@ div.menu a:hover {
     gap: var(--gap-mini);
     flex: unset;
     align-self: stretch;
+    justify-content: center;
   }
   .footercontent {
     flex-direction: column;
-    gap: var(--gap-21xl);
+    gap: var(--gap-mini);
+  }
+
+  .termes-et-conditions {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .logo {
+  .logo, .menu {
     flex-direction: row;
     gap: var(--gap-mini);
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center; /*justify-content: start;*/
     flex: unset;
     align-self: stretch;
   }
-  .menu {
-    display: none;
+
+
+  @media screen and (max-width: 768px) {
+    .logo-image {
+      margin-left: -20px;
+    }
   }
+
   
   #header {
     flex-direction: column;
@@ -250,6 +262,7 @@ div.menu a:hover {
     align-items: center;
     justify-content: center;
   }
+  
 }
 
 @media screen and (max-width: 960px) {
