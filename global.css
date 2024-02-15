@@ -199,21 +199,40 @@ div.menu a:hover {
   content: '© ' var(--nom-marque)
 }
 
-#footer {
-  /* display: flex; */
-  flex-direction: column;
-  align-self: stretch;
-  background-color: var(--color-black);
-  padding: var(--padding-lg) var(--padding-21xl);
-  align-items: flex-start;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-
 .space {
   align-self: stretch;
   height: 42px;
 }
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  font-size: 16px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline:auto;
+  background-color: #96b5d6;
+  opacity: 75%;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#scrollTopBtn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 900px) {
+  #scrollTopBtn {
+    display: none;
+  }
+}
+
+
 
 @media screen and (max-width: 580px) {
   .footercontent,
