@@ -41,7 +41,7 @@ div.contenu-a-propos p {
 .contenu-a-propos {
   align-self: stretch;
   position: relative;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--color-slategray-100);
   display: inline-block;
   max-width: 900px;
@@ -71,5 +71,12 @@ p {
 @media screen and (max-width: 960px) {
   .services2 {
     font-size: var(--font-size-mini);
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenu-a-propos {
+    font-size: var(--font-size-sm);
   }
 }

@@ -244,14 +244,14 @@
 
 @media screen and (max-width: 580px) {
   .titre {
-    font-size: 45px;
+    font-size: 30px;
   }
   .sous-titre {
-    line-height: 30px;
+    line-height: 24px;
   }
   .contactez-nous,
   .sous-titre {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
   }
   .boutoncontact {
     height: 55px;
@@ -264,4 +264,13 @@
   .texte-accroche .texte-accroche-gras {
     font-size: 18px;
   }
+
+  .titre-contact {
+    font-size: 24px;
+  }
+
+  .text-contact {
+    font-size: var(--font-size-base);
+  }
+
 }
